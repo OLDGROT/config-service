@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: "user-service"
+  profiles:
+    active: dev
+  jmx:
+    enabled: false
+  hal:
+    enabled: true
+    jackson:
+      serialization:
+        fail-on-empty-beans: false
+  kafka:
+    bootstrap-servers: localhost::9092
+
+app:
+  kafka:
+    topic:
+      user-events: user.events
+
