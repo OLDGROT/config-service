@@ -16,7 +16,7 @@ public class ConfigController {
 
     @GetMapping("/{serviceName}")
     public ResponseEntity<ServiceConfig> getConfig(@PathVariable String serviceName) {
-        return ResponseEntity.ok(configService.getConfig(serviceName));
+        return ResponseEntity.ok(null);
     }
 }
 
